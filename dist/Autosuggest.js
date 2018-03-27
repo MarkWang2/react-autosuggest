@@ -744,7 +744,7 @@ var _initialiseProps = function _initialiseProps() {
   };
 
   this.onSuggestionMouseDown = function() {
-    _this3.justSelectedSuggestion = true;
+    _this3.justSelectedSuggestion = false;
   };
 
   this.onSuggestionsClearRequested = function() {
