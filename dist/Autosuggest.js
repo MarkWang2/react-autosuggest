@@ -398,7 +398,6 @@ var Autosuggest = (function(_Component) {
         var autowhateverInputProps = _extends({}, inputProps, {
           onFocus: function onFocus(event) {
             if (
-              !_this2.justSelectedSuggestion &&
               !_this2.justClickedOnSuggestionsContainer
             ) {
               var shouldRender = shouldRenderSuggestions(value);
@@ -744,7 +743,7 @@ var _initialiseProps = function _initialiseProps() {
   };
 
   this.onSuggestionMouseDown = function() {
-    _this3.justSelectedSuggestion = false;
+    _this3.justSelectedSuggestion = true;
   };
 
   this.onSuggestionsClearRequested = function() {
